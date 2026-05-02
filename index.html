@@ -1,0 +1,768 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HogLedger - Piggery Accounting &amp; Farm Operations App</title>
+  <meta name="description" content="HogLedger is an offline-first piggery accounting and farm operations app for tracking finance, livestock, feed, medicine, breeding, disinfection, reports, and backups.">
+  <meta name="keywords" content="HogLedger, piggery accounting, pig farm management, livestock records, farm operations, pig farming app, agriculture app">
+  <meta property="og:title" content="HogLedger - Piggery Accounting &amp; Farm Operations">
+  <meta property="og:description" content="Offline-first piggery accounting and operations app. Track finance, livestock, feed, medicine, breeding, disinfection, reports, and backups.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/hogledger-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <div class="nav-logo-icon">
+          <img src="images/hogledger-icon.png" alt="" class="brand-icon-img">
+        </div>
+        <span>HogLedger</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#screenshots" class="nav-link">Screenshots</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#download" class="nav-link nav-cta">Download</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-container">
+      <div class="hero-content fade-in">
+        <span class="hero-badge">Available Now &middot; Offline Farm Records</span>
+        <h1 class="hero-title">HogLedger</h1>
+        <p class="hero-tagline">Piggery Accounting &amp; Operations</p>
+        <p class="hero-description">
+          The offline-first mobile app for pig farmers who need clean accounting and daily farm records.
+          Track income, expenses, cages, feed, health schedules, breeding, disinfection, backups, and reports from your phone.
+        </p>
+        <div class="hero-buttons">
+          <a href="#download" class="btn btn-primary">
+            <ion-icon name="download-outline"></ion-icon>
+            Get the Android App
+          </a>
+          <a href="#features" class="btn btn-outline">
+            <ion-icon name="arrow-down-circle-outline"></ion-icon>
+            Explore Features
+          </a>
+        </div>
+      </div>
+      <div class="hero-phone fade-in">
+        <div class="hero-visual-stage">
+          <div class="hero-app-card">
+            <img src="images/hogledger-icon.png" alt="HogLedger app icon" class="hero-app-icon">
+            <div>
+              <div class="hero-app-name">HogLedger</div>
+              <div class="hero-app-meta">Local records ready</div>
+            </div>
+          </div>
+
+          <div class="hero-float-card hero-float-left">
+            <ion-icon name="shield-checkmark"></ion-icon>
+            <div>
+              <span>Withdrawal</span>
+              <strong>2 safe dates</strong>
+            </div>
+          </div>
+
+          <div class="phone-mockup">
+            <div class="phone-screen">
+              <div class="phone-header">
+                <div class="phone-header-row">
+                  <div>
+                    <div class="phone-app-name">HogLedger</div>
+                    <div class="phone-date">Farm dashboard</div>
+                  </div>
+                  <div class="phone-bell">
+                    <ion-icon name="notifications"></ion-icon>
+                    <span>4</span>
+                  </div>
+                </div>
+              </div>
+              <div class="phone-card green">
+                <div class="phone-card-icon"><ion-icon name="trending-up"></ion-icon></div>
+                <div>
+                  <div class="phone-card-label">Net Profit</div>
+                  <div class="phone-card-value">$12,450.00</div>
+                </div>
+              </div>
+              <div class="phone-command">
+                <div class="phone-section-title">Command Center</div>
+                <div class="phone-command-grid">
+                  <div class="phone-command-item red">
+                    <ion-icon name="alert-circle"></ion-icon>
+                    <strong>4</strong>
+                    <span>Tasks</span>
+                  </div>
+                  <div class="phone-command-item amber">
+                    <ion-icon name="cube"></ion-icon>
+                    <strong>2</strong>
+                    <span>Low stock</span>
+                  </div>
+                </div>
+                <div class="phone-priority">
+                  <ion-icon name="sparkles"></ion-icon>
+                  <div>
+                    <span>Next Best Action</span>
+                    <strong>Disinfect Pen A</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="phone-stats">
+                <div class="phone-stat">
+                  <div class="phone-stat-icon green-bg"><ion-icon name="paw"></ion-icon></div>
+                  <div class="phone-stat-num">48</div>
+                  <div class="phone-stat-label">Total</div>
+                </div>
+                <div class="phone-stat">
+                  <div class="phone-stat-icon blue-bg"><ion-icon name="checkmark-circle"></ion-icon></div>
+                  <div class="phone-stat-num">42</div>
+                  <div class="phone-stat-label">Active</div>
+                </div>
+                <div class="phone-stat">
+                  <div class="phone-stat-icon yellow-bg"><ion-icon name="scale"></ion-icon></div>
+                  <div class="phone-stat-num">65.3</div>
+                  <div class="phone-stat-label">Avg kg</div>
+                </div>
+              </div>
+              <div class="phone-nav">
+                <div class="phone-nav-item active"><ion-icon name="home"></ion-icon></div>
+                <div class="phone-nav-item"><ion-icon name="wallet"></ion-icon></div>
+                <div class="phone-nav-item"><ion-icon name="paw"></ion-icon></div>
+                <div class="phone-nav-item"><ion-icon name="construct"></ion-icon></div>
+                <div class="phone-nav-item"><ion-icon name="stats-chart"></ion-icon></div>
+                <div class="phone-nav-item"><ion-icon name="settings"></ion-icon></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-float-card hero-float-right">
+            <ion-icon name="cloud-upload"></ion-icon>
+            <div>
+              <span>Backup</span>
+              <strong>JSON export</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="#ffffff"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-badge">What You Get</span>
+        <h2 class="section-title">Accounting and Operations in One Farm Ledger</h2>
+        <p class="section-subtitle">HogLedger brings the updated mobile app modules into one offline record system.</p>
+      </div>
+      <div class="feature-comparison fade-in" aria-label="HogLedger feature comparison">
+        <div class="comparison-item">
+          <ion-icon name="wallet"></ion-icon>
+          <span>Accounting</span>
+        </div>
+        <div class="comparison-item">
+          <ion-icon name="paw"></ion-icon>
+          <span>Livestock</span>
+        </div>
+        <div class="comparison-item">
+          <ion-icon name="nutrition"></ion-icon>
+          <span>Feed</span>
+        </div>
+        <div class="comparison-item">
+          <ion-icon name="medical"></ion-icon>
+          <span>Medicine</span>
+        </div>
+        <div class="comparison-item">
+          <ion-icon name="git-branch"></ion-icon>
+          <span>Breeding</span>
+        </div>
+        <div class="comparison-item">
+          <ion-icon name="stats-chart"></ion-icon>
+          <span>Reports</span>
+        </div>
+        <div class="comparison-item">
+          <ion-icon name="cloud-upload"></ion-icon>
+          <span>Backups</span>
+        </div>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card fade-in">
+          <div class="feature-icon" style="background: #ecfdf5; color: #10b981;">
+            <ion-icon name="wallet"></ion-icon>
+          </div>
+          <h3 class="feature-title">Piggery Accounting</h3>
+          <p class="feature-desc">Record income and expenses, connect costs to pigs or cages, and review profit with current currency settings.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon" style="background: #eff6ff; color: #3b82f6;">
+            <ion-icon name="paw"></ion-icon>
+          </div>
+          <h3 class="feature-title">Livestock &amp; Cage Records</h3>
+          <p class="feature-desc">Manage tagged pigs, cage or pen assignments, weights, photos, mortality records, sales, and purchase history.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon" style="background: #fef3c7; color: #f59e0b;">
+            <ion-icon name="nutrition"></ion-icon>
+          </div>
+          <h3 class="feature-title">Feed &amp; Stock Control</h3>
+          <p class="feature-desc">Track feed inventory, supplier purchases, consumption, expiry dates, low-stock alerts, and automatic expense entries.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon" style="background: #fce7f3; color: #ec4899;">
+            <ion-icon name="medical"></ion-icon>
+          </div>
+          <h3 class="feature-title">Health Schedules</h3>
+          <p class="feature-desc">Log medicines and vitamins, manage multi-dose treatment schedules, and monitor withdrawal periods before sale.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon" style="background: #f3e8ff; color: #8b5cf6;">
+            <ion-icon name="today"></ion-icon>
+          </div>
+          <h3 class="feature-title">Daily Operations</h3>
+          <p class="feature-desc">Use the Today tab for priorities across feed, low stock, treatment reminders, disinfection, and backup checks.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon" style="background: #fef2f2; color: #ef4444;">
+            <ion-icon name="cloud-upload"></ion-icon>
+          </div>
+          <h3 class="feature-title">Reports &amp; Backups</h3>
+          <p class="feature-desc">Review financial reports, cage performance, expense breakdowns, and export or import full JSON backups.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy Section -->
+  <section class="privacy-data" id="privacy-data">
+    <div class="container">
+      <div class="privacy-data-grid fade-in">
+        <div class="privacy-data-content">
+          <span class="section-badge">Offline-First by Design</span>
+          <h2 class="section-title">Your Farm Data Stays on Your Device</h2>
+          <p class="privacy-data-text">
+            HogLedger stores farm records locally with SQLite, so daily accounting, livestock, feed,
+            medicine, breeding, and disinfection records remain available without internet.
+          </p>
+        </div>
+        <div class="privacy-points">
+          <div class="privacy-point">
+            <div class="privacy-point-icon"><ion-icon name="phone-portrait"></ion-icon></div>
+            <div>
+              <h3>Local Records</h3>
+              <p>Farm data is kept on the device you use for the app.</p>
+            </div>
+          </div>
+          <div class="privacy-point">
+            <div class="privacy-point-icon"><ion-icon name="cloud-offline"></ion-icon></div>
+            <div>
+              <h3>Works Offline</h3>
+              <p>Record daily work in the barn, field, or office without a signal.</p>
+            </div>
+          </div>
+          <div class="privacy-point">
+            <div class="privacy-point-icon"><ion-icon name="cloud-upload"></ion-icon></div>
+            <div>
+              <h3>Backup Control</h3>
+              <p>Export and import JSON backups when you want a portable copy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots Section -->
+  <section class="screenshots" id="screenshots">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-badge">App Preview</span>
+        <h2 class="section-title">See HogLedger in Action</h2>
+        <p class="section-subtitle">Real app screens for farm records, alerts, reports, and daily decisions.</p>
+      </div>
+      <div class="screenshots-grid fade-in">
+        <figure class="screenshot-item screenshot-real">
+          <div class="screenshot-frame">
+            <img src="images/hogledger-home.png" alt="HogLedger Home dashboard screen" class="screenshot-img">
+          </div>
+          <figcaption class="screenshot-caption">Home Dashboard</figcaption>
+        </figure>
+
+        <figure class="screenshot-item screenshot-real">
+          <div class="screenshot-frame">
+            <img src="images/hogledger-finance.png" alt="HogLedger Finance overview screen" class="screenshot-img">
+          </div>
+          <figcaption class="screenshot-caption">Finance Overview</figcaption>
+        </figure>
+
+        <figure class="screenshot-item screenshot-real">
+          <div class="screenshot-frame">
+            <img src="images/hogledger-livestock-individual.png" alt="HogLedger Livestock individual pigs screen" class="screenshot-img">
+          </div>
+          <figcaption class="screenshot-caption">Livestock Records</figcaption>
+        </figure>
+
+        <figure class="screenshot-item screenshot-real">
+          <div class="screenshot-frame">
+            <img src="images/hogledger-livestock-cages.png" alt="HogLedger Livestock by cage dashboard screen" class="screenshot-img">
+          </div>
+          <figcaption class="screenshot-caption">Cage Dashboard</figcaption>
+        </figure>
+
+        <figure class="screenshot-item screenshot-real">
+          <div class="screenshot-frame">
+            <img src="images/hogledger-operations.png" alt="HogLedger Operations work queue screen" class="screenshot-img">
+          </div>
+          <figcaption class="screenshot-caption">Operations Today</figcaption>
+        </figure>
+
+        <figure class="screenshot-item screenshot-real">
+          <div class="screenshot-frame">
+            <img src="images/hogledger-reports.png" alt="HogLedger Reports action plan screen" class="screenshot-img">
+          </div>
+          <figcaption class="screenshot-caption">Reports Action Plan</figcaption>
+        </figure>
+
+        <figure class="screenshot-item screenshot-real">
+          <div class="screenshot-frame">
+            <img src="images/hogledger-settings.png" alt="HogLedger Settings farm profile screen" class="screenshot-img">
+          </div>
+          <figcaption class="screenshot-caption">Farm Settings</figcaption>
+        </figure>
+
+        <!-- Dashboard Screen -->
+        <div class="screenshot-item">
+          <div class="screenshot-placeholder">
+            <div class="app-screen">
+              <div class="app-header-grad">
+                <div class="app-header-row">
+                  <div>
+                    <div class="app-header-title">HogLedger</div>
+                    <div class="app-header-sub">Farm dashboard</div>
+                  </div>
+                  <div class="app-bell"><ion-icon name="notifications-outline"></ion-icon></div>
+                </div>
+                <div class="app-finance-row">
+                  <div class="app-finance-card">
+                    <div class="app-finance-icon green-circle"><ion-icon name="arrow-up"></ion-icon></div>
+                    <div class="app-finance-label">Income</div>
+                    <div class="app-finance-val">$24,500.00</div>
+                  </div>
+                  <div class="app-finance-card">
+                    <div class="app-finance-icon red-circle"><ion-icon name="arrow-down"></ion-icon></div>
+                    <div class="app-finance-label">Expenses</div>
+                    <div class="app-finance-val">$12,050.00</div>
+                  </div>
+                </div>
+              </div>
+              <div class="app-body">
+                <div class="app-profit-card">
+                  <div class="app-profit-icon"><ion-icon name="trending-up"></ion-icon></div>
+                  <div>
+                    <div class="app-profit-label">Net Profit</div>
+                    <div class="app-profit-val">$12,450.00</div>
+                  </div>
+                </div>
+                <div class="app-section-label">Livestock Status</div>
+                <div class="app-stats-row">
+                  <div class="app-stat-card green-tint">
+                    <div class="app-stat-circle green-bg"><ion-icon name="paw"></ion-icon></div>
+                    <div class="app-stat-num">48</div>
+                    <div class="app-stat-lbl">Total</div>
+                  </div>
+                  <div class="app-stat-card blue-tint">
+                    <div class="app-stat-circle blue-bg"><ion-icon name="checkmark-circle"></ion-icon></div>
+                    <div class="app-stat-num">42</div>
+                    <div class="app-stat-lbl">Active</div>
+                  </div>
+                  <div class="app-stat-card yellow-tint">
+                    <div class="app-stat-circle yellow-bg"><ion-icon name="scale"></ion-icon></div>
+                    <div class="app-stat-num">65.3</div>
+                    <div class="app-stat-lbl">Avg kg</div>
+                  </div>
+                </div>
+                <div class="app-section-label">Command Center</div>
+                <div class="app-command-mini">
+                  <div class="app-command-chip red-chip"><ion-icon name="alert-circle"></ion-icon><span>4 tasks</span></div>
+                  <div class="app-command-chip amber-chip"><ion-icon name="cube"></ion-icon><span>2 low stock</span></div>
+                </div>
+              </div>
+              <div class="app-tab-bar">
+                <div class="app-tab active"><ion-icon name="home"></ion-icon></div>
+                <div class="app-tab"><ion-icon name="wallet-outline"></ion-icon></div>
+                <div class="app-tab"><ion-icon name="paw-outline"></ion-icon></div>
+                <div class="app-tab"><ion-icon name="construct-outline"></ion-icon></div>
+                <div class="app-tab"><ion-icon name="stats-chart-outline"></ion-icon></div>
+                <div class="app-tab"><ion-icon name="settings-outline"></ion-icon></div>
+              </div>
+            </div>
+          </div>
+          <p class="screenshot-caption">Dashboard Overview</p>
+        </div>
+
+        <!-- Livestock Screen -->
+        <div class="screenshot-item">
+          <div class="screenshot-placeholder">
+            <div class="app-screen">
+              <div class="app-header-bar">
+                <div class="app-header-title">Livestock</div>
+              </div>
+              <div class="app-body scrollable">
+                <div class="app-livestock-card">
+                  <div class="app-livestock-row">
+                    <div class="app-livestock-tag">#PIG-001</div>
+                    <span class="app-badge green">Active</span>
+                  </div>
+                  <div class="app-livestock-detail">Breed: Large White &middot; 72.5 kg</div>
+                  <div class="app-livestock-detail">Age: 120 days &middot; Cage: A-1</div>
+                  <div class="app-feed-rec">
+                    <ion-icon name="leaf" style="color:#10b981;font-size:10px"></ion-icon>
+                    <span>Grower Feed &middot; 2.5kg/day</span>
+                  </div>
+                </div>
+                <div class="app-livestock-card">
+                  <div class="app-livestock-row">
+                    <div class="app-livestock-tag">#PIG-002</div>
+                    <span class="app-badge green">Active</span>
+                  </div>
+                  <div class="app-livestock-detail">Breed: Duroc &middot; 35.0 kg</div>
+                  <div class="app-livestock-detail">Age: 56 days &middot; Cage: B-2</div>
+                  <div class="app-feed-rec">
+                    <ion-icon name="leaf" style="color:#f59e0b;font-size:10px"></ion-icon>
+                    <span>Weaner Feed &middot; 1.5kg/day</span>
+                  </div>
+                </div>
+                <div class="app-livestock-card">
+                  <div class="app-livestock-row">
+                    <div class="app-livestock-tag">#PIG-003</div>
+                    <span class="app-badge green">Active</span>
+                  </div>
+                  <div class="app-livestock-detail">Breed: Landrace &middot; 95.0 kg</div>
+                  <div class="app-livestock-detail">Age: 165 days &middot; Cage: A-3</div>
+                  <div class="app-feed-rec">
+                    <ion-icon name="leaf" style="color:#8b5cf6;font-size:10px"></ion-icon>
+                    <span>Finisher Feed &middot; 3.0kg/day</span>
+                  </div>
+                </div>
+              </div>
+              <div class="app-fab-float"><ion-icon name="add"></ion-icon></div>
+              <div class="app-tab-bar">
+                <div class="app-tab"><ion-icon name="home-outline"></ion-icon></div>
+                <div class="app-tab"><ion-icon name="wallet-outline"></ion-icon></div>
+                <div class="app-tab active"><ion-icon name="paw"></ion-icon></div>
+                <div class="app-tab"><ion-icon name="construct-outline"></ion-icon></div>
+                <div class="app-tab"><ion-icon name="stats-chart-outline"></ion-icon></div>
+                <div class="app-tab"><ion-icon name="settings-outline"></ion-icon></div>
+              </div>
+            </div>
+          </div>
+          <p class="screenshot-caption">Livestock Records</p>
+        </div>
+
+        <!-- Transactions Screen -->
+        <div class="screenshot-item">
+          <div class="screenshot-placeholder">
+            <div class="app-screen">
+              <div class="app-header-bar">
+                <div class="app-header-title">Transactions</div>
+              </div>
+              <div class="app-body scrollable">
+                <div class="app-txn-card">
+                  <div class="app-txn-row">
+                    <div class="app-txn-left">
+                      <ion-icon name="arrow-down-circle" style="color:#ef4444;font-size:16px"></ion-icon>
+                      <div>
+                        <div class="app-txn-cat">Feed</div>
+                        <div class="app-txn-desc">Grower feed purchase</div>
+                        <div class="app-txn-date">Feb 10, 2026</div>
+                      </div>
+                    </div>
+                    <div class="app-txn-amount red">-$1,200.00</div>
+                  </div>
+                </div>
+                <div class="app-txn-card">
+                  <div class="app-txn-row">
+                    <div class="app-txn-left">
+                      <ion-icon name="arrow-up-circle" style="color:#10b981;font-size:16px"></ion-icon>
+                      <div>
+                        <div class="app-txn-cat">Pig Sales</div>
+                        <div class="app-txn-desc">Sold 3 finishers</div>
+                        <div class="app-txn-date">Feb 08, 2026</div>
+                      </div>
+                    </div>
+                    <div class="app-txn-amount green">+$8,500.00</div>
+                  </div>
+                </div>
+                <div class="app-txn-card">
+                  <div class="app-txn-row">
+                    <div class="app-txn-left">
+                      <ion-icon name="arrow-down-circle" style="color:#ef4444;font-size:16px"></ion-icon>
+                      <div>
+                        <div class="app-txn-cat">Veterinary</div>
+                        <div class="app-txn-desc">Vaccination</div>
+                        <div class="app-txn-date">Feb 05, 2026</div>
+                      </div>
+                    </div>
+                    <div class="app-txn-amount red">-$450.00</div>
+                  </div>
+                </div>
+                <div class="app-txn-card">
+                  <div class="app-txn-row">
+                    <div class="app-txn-left">
+                      <ion-icon name="arrow-down-circle" style="color:#ef4444;font-size:16px"></ion-icon>
+                      <div>
+                        <div class="app-txn-cat">Labor</div>
+                        <div class="app-txn-desc">Farm worker salary</div>
+                        <div class="app-txn-date">Feb 01, 2026</div>
+                      </div>
+                    </div>
+                    <div class="app-txn-amount red">-$800.00</div>
+                  </div>
+                </div>
+              </div>
+              <div class="app-fab-float"><ion-icon name="add"></ion-icon></div>
+              <div class="app-tab-bar">
+                <div class="app-tab"><ion-icon name="home-outline"></ion-icon></div>
+                <div class="app-tab active"><ion-icon name="wallet"></ion-icon></div>
+                <div class="app-tab"><ion-icon name="paw-outline"></ion-icon></div>
+                <div class="app-tab"><ion-icon name="construct-outline"></ion-icon></div>
+                <div class="app-tab"><ion-icon name="stats-chart-outline"></ion-icon></div>
+                <div class="app-tab"><ion-icon name="settings-outline"></ion-icon></div>
+              </div>
+            </div>
+          </div>
+          <p class="screenshot-caption">Financial Tracking</p>
+        </div>
+
+        <!-- Health Screen -->
+        <div class="screenshot-item">
+          <div class="screenshot-placeholder">
+            <div class="app-screen">
+              <div class="app-header-bar">
+                <div class="app-header-title">Operations</div>
+              </div>
+              <div class="app-top-tabs">
+                <div class="app-top-tab active">Today</div>
+                <div class="app-top-tab">Feed</div>
+                <div class="app-top-tab">Health</div>
+                <div class="app-top-tab">Breeding</div>
+                <div class="app-top-tab">Disinfect</div>
+              </div>
+              <div class="app-body scrollable">
+                <div class="app-health-card">
+                  <div class="app-health-row">
+                    <div class="app-health-icon red-circle"><ion-icon name="alert-circle"></ion-icon></div>
+                    <div>
+                      <div class="app-health-name">Disinfect Pen A</div>
+                      <div class="app-health-sub">Overdue &middot; 9 days since last record</div>
+                    </div>
+                    <div class="app-health-actions">
+                      <ion-icon name="checkmark-circle-outline" style="color:#10b981;font-size:14px"></ion-icon>
+                    </div>
+                  </div>
+                  <div class="app-health-detail">Priority from the Operations Today checklist</div>
+                </div>
+                <div class="app-health-card">
+                  <div class="app-health-row">
+                    <div class="app-health-icon purple-circle"><ion-icon name="fitness"></ion-icon></div>
+                    <div>
+                      <div class="app-health-name">Vitamin B Complex</div>
+                      <div class="app-health-sub">Weaners Group &middot; Due soon</div>
+                    </div>
+                    <div class="app-health-actions">
+                      <ion-icon name="notifications-outline" style="color:#8b5cf6;font-size:14px"></ion-icon>
+                    </div>
+                  </div>
+                  <div class="app-health-detail">Schedule auto-matches when the dose is logged</div>
+                </div>
+                <div class="app-health-card">
+                  <div class="app-health-row">
+                    <div class="app-health-icon green-circle-sm"><ion-icon name="shield-checkmark"></ion-icon></div>
+                    <div>
+                      <div class="app-health-name">PIG-012 Withdrawal</div>
+                      <div class="app-health-sub">Medicine record &middot; Safe date tracking</div>
+                    </div>
+                    <div class="app-health-actions">
+                      <ion-icon name="calendar-outline" style="color:#10b981;font-size:14px"></ion-icon>
+                    </div>
+                  </div>
+                  <div class="app-health-detail">Ivermectin &middot; active withdrawal alert</div>
+                  <div class="app-withdrawal">Safe: Mar 06</div>
+                </div>
+              </div>
+              <div class="app-fab-float"><ion-icon name="add"></ion-icon></div>
+              <div class="app-tab-bar">
+                <div class="app-tab"><ion-icon name="home-outline"></ion-icon></div>
+                <div class="app-tab"><ion-icon name="wallet-outline"></ion-icon></div>
+                <div class="app-tab"><ion-icon name="paw-outline"></ion-icon></div>
+                <div class="app-tab active"><ion-icon name="construct"></ion-icon></div>
+                <div class="app-tab"><ion-icon name="stats-chart-outline"></ion-icon></div>
+                <div class="app-tab"><ion-icon name="settings-outline"></ion-icon></div>
+              </div>
+            </div>
+          </div>
+          <p class="screenshot-caption">Operations Today</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content fade-in">
+          <span class="section-badge">Why HogLedger?</span>
+          <h2 class="section-title">Built for Real Pig Farm Records</h2>
+          <p class="about-text">
+            HogLedger keeps daily farm work tied to the numbers behind it, so production records,
+            health decisions, and accounting stay in one dependable offline ledger.
+          </p>
+          <div class="about-benefits">
+            <div class="benefit-item">
+              <div class="benefit-icon"><ion-icon name="phone-portrait"></ion-icon></div>
+              <div>
+                <h4>Works Offline</h4>
+                <p>All data is stored locally on your device. No internet required to use the app.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon"><ion-icon name="flash"></ion-icon></div>
+              <div>
+                <h4>Easy to Use</h4>
+                <p>Simple, intuitive interface. Add records quickly during daily farm work.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon"><ion-icon name="shield-checkmark"></ion-icon></div>
+              <div>
+                <h4>Complete Solution</h4>
+                <p>From accounting to breeding, health, feed, disinfection, and reports in one app.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon"><ion-icon name="notifications"></ion-icon></div>
+              <div>
+                <h4>Smart Reminders</h4>
+                <p>Get notified about treatments, vitamins, disinfection, low stock, backups, and withdrawal periods.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual fade-in">
+          <div class="about-stats-card">
+            <div class="about-stat">
+              <div class="about-stat-number">10+</div>
+              <div class="about-stat-label">Management Modules</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-number">100%</div>
+              <div class="about-stat-label">Offline Capable</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-number">JSON</div>
+              <div class="about-stat-label">Backup Export</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download CTA Section -->
+  <section class="download" id="download">
+    <div class="download-bg"></div>
+    <div class="container">
+      <div class="download-content fade-in">
+        <div class="download-icon">
+          <ion-icon name="paw"></ion-icon>
+        </div>
+        <h2 class="download-title">Ready to Run the Farm From One Ledger?</h2>
+        <p class="download-subtitle">
+          Download HogLedger today and take control of your piggery accounting and operations.
+          It works offline, keeps records local, and is designed for small to medium pig farms.
+        </p>
+        <a href="https://play.google.com/store/apps/details?id=com.hogledger.app" class="btn btn-download" id="playStoreLink" target="_blank" rel="noopener">
+          <svg class="play-icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+            <path fill="currentColor" d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+          </svg>
+          <div>
+            <span class="download-small">GET IT ON</span>
+            <span class="download-big">Google Play</span>
+          </div>
+        </a>
+        <p class="download-version">Version 1.0.0 &middot; Available now for Android</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="nav-logo-icon">
+              <img src="images/hogledger-icon.png" alt="" class="brand-icon-img">
+            </div>
+            <span>HogLedger</span>
+          </div>
+          <p class="footer-desc">Offline piggery accounting and operations for modern farms.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#screenshots">Screenshots</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#download">Download</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:support@hogledger.app">support@hogledger.app</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 HogLedger. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
