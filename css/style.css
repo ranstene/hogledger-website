@@ -886,10 +886,6 @@ img {
   text-align: center;
 }
 
-.screenshots-grid > .screenshot-item:not(.screenshot-real) {
-  display: none;
-}
-
 .screenshot-frame {
   background: var(--gray-900);
   border-radius: 28px;
