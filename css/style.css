@@ -305,6 +305,26 @@ img {
   line-height: 1.7;
 }
 
+.hero-trust-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.92);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hero-trust-line ion-icon {
+  color: var(--green-100);
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
 .hero-buttons {
   display: flex;
   gap: 14px;
@@ -425,19 +445,27 @@ img {
   border-radius: 36px;
   padding: 12px;
   box-shadow: 0 25px 60px rgba(0,0,0,0.3);
-  transform: perspective(800px) rotateY(-8deg) rotateX(3deg);
-  transition: transform 0.5s ease;
+  transform: perspective(900px) rotateY(-5deg) rotateX(2deg);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 
 .phone-mockup:hover {
-  transform: perspective(800px) rotateY(-3deg) rotateX(1deg);
+  transform: perspective(900px) rotateY(-2deg) rotateX(1deg) translateY(-4px);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.32);
 }
 
 .phone-screen {
   background: var(--green-50);
   border-radius: 26px;
   overflow: hidden;
-  padding: 0 0 8px;
+  padding: 0;
+}
+
+.hero-phone-screenshot {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: auto;
 }
 
 .phone-header {
@@ -726,7 +754,7 @@ img {
 
 .feature-comparison {
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-columns: repeat(8, minmax(0, 1fr));
   gap: 10px;
   margin: -18px 0 42px;
 }
@@ -757,7 +785,7 @@ img {
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
@@ -797,6 +825,66 @@ img {
   font-size: 14px;
   color: var(--gray-500);
   line-height: 1.6;
+}
+
+/* ===== Best For ===== */
+.best-for {
+  padding: 0 0 88px;
+  background: var(--white);
+}
+
+.best-for-panel {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 40px;
+  align-items: center;
+  padding: 34px;
+  border: 1px solid #d1fae5;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+  box-shadow: var(--shadow-md);
+}
+
+.best-for-copy .section-title {
+  max-width: 430px;
+  font-size: 30px;
+}
+
+.best-for-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.best-for-item {
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: var(--white);
+}
+
+.best-for-icon {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--green-100);
+  color: var(--green-600);
+  font-size: 22px;
+}
+
+.best-for-item span {
+  color: var(--gray-800);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.35;
 }
 
 /* ===== Privacy Data ===== */
@@ -876,14 +964,18 @@ img {
 
 .screenshots-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 240px));
   gap: 24px;
   align-items: start;
+  justify-content: center;
 }
 
 .screenshot-item {
   margin: 0;
   text-align: center;
+  width: 100%;
+  max-width: 240px;
+  justify-self: center;
 }
 
 .screenshot-frame {
@@ -1740,8 +1832,13 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .best-for-panel {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
   .screenshots-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 240px));
     gap: 20px;
   }
 
@@ -1850,9 +1947,29 @@ img {
     padding: 24px 20px;
   }
 
+  .best-for {
+    padding-bottom: 70px;
+  }
+
+  .best-for-panel {
+    padding: 26px 22px;
+  }
+
+  .best-for-copy .section-title {
+    font-size: 26px;
+  }
+
+  .best-for-grid {
+    grid-template-columns: 1fr;
+  }
+
   .screenshots-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 220px));
     gap: 16px;
+  }
+
+  .screenshot-item {
+    max-width: 220px;
   }
 
   .about-grid {
@@ -1928,8 +2045,12 @@ img {
 
   .screenshots-grid {
     grid-template-columns: 1fr;
-    max-width: 300px;
+    max-width: 280px;
     margin: 0 auto;
+  }
+
+  .screenshot-item {
+    max-width: 280px;
   }
 
   .about-stats-card {

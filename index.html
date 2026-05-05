@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HogLedger - Piggery Accounting &amp; Farm Operations App</title>
-  <meta name="description" content="HogLedger is an offline-first piggery accounting and farm operations app for tracking finance, livestock, feed, medicine, breeding, disinfection, reports, and backups.">
-  <meta name="keywords" content="HogLedger, piggery accounting, pig farm management, livestock records, farm operations, pig farming app, agriculture app">
+  <meta name="description" content="HogLedger is an offline-first piggery accounting and farm operations app for tracking finance, livestock, cages, photos, feed, medicine, breeding, disinfection, reports, and farm backup files.">
+  <meta name="keywords" content="HogLedger, piggery accounting, pig farm management, livestock records, farm operations, pig farming app, agriculture app, farm backup, pig photos">
   <meta property="og:title" content="HogLedger - Piggery Accounting &amp; Farm Operations">
-  <meta property="og:description" content="Offline-first piggery accounting and operations app. Track finance, livestock, feed, medicine, breeding, disinfection, reports, and backups.">
+  <meta property="og:description" content="Offline-first piggery accounting and operations app. Track finance, livestock, photos, feed, medicine, breeding, disinfection, reports, and farm backup files.">
   <meta property="og:type" content="website">
   <link rel="icon" href="images/hogledger-favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,7 +50,11 @@
         <p class="hero-tagline">Piggery Accounting &amp; Operations</p>
         <p class="hero-description">
           The offline-first mobile app for pig farmers who need clean accounting and daily farm records.
-          Track income, expenses, cages, feed, health schedules, breeding, disinfection, backups, and reports from your phone.
+          Track income, expenses, cages, photos, feed, health schedules, breeding, disinfection, backup files, and reports from your phone.
+        </p>
+        <p class="hero-trust-line">
+          <ion-icon name="shield-checkmark-outline"></ion-icon>
+          Your farm records stay on your device. HogLedger works offline.
         </p>
         <div class="hero-buttons">
           <a href="#download" class="btn btn-primary">
@@ -83,72 +87,7 @@
 
           <div class="phone-mockup">
             <div class="phone-screen">
-              <div class="phone-header">
-                <div class="phone-header-row">
-                  <div>
-                    <div class="phone-app-name">HogLedger</div>
-                    <div class="phone-date">Farm dashboard</div>
-                  </div>
-                  <div class="phone-bell">
-                    <ion-icon name="notifications"></ion-icon>
-                    <span>4</span>
-                  </div>
-                </div>
-              </div>
-              <div class="phone-card green">
-                <div class="phone-card-icon"><ion-icon name="trending-up"></ion-icon></div>
-                <div>
-                  <div class="phone-card-label">Net Profit</div>
-                  <div class="phone-card-value">$12,450.00</div>
-                </div>
-              </div>
-              <div class="phone-command">
-                <div class="phone-section-title">Command Center</div>
-                <div class="phone-command-grid">
-                  <div class="phone-command-item red">
-                    <ion-icon name="alert-circle"></ion-icon>
-                    <strong>4</strong>
-                    <span>Tasks</span>
-                  </div>
-                  <div class="phone-command-item amber">
-                    <ion-icon name="cube"></ion-icon>
-                    <strong>2</strong>
-                    <span>Low stock</span>
-                  </div>
-                </div>
-                <div class="phone-priority">
-                  <ion-icon name="sparkles"></ion-icon>
-                  <div>
-                    <span>Next Best Action</span>
-                    <strong>Disinfect Pen A</strong>
-                  </div>
-                </div>
-              </div>
-              <div class="phone-stats">
-                <div class="phone-stat">
-                  <div class="phone-stat-icon green-bg"><ion-icon name="paw"></ion-icon></div>
-                  <div class="phone-stat-num">48</div>
-                  <div class="phone-stat-label">Total</div>
-                </div>
-                <div class="phone-stat">
-                  <div class="phone-stat-icon blue-bg"><ion-icon name="checkmark-circle"></ion-icon></div>
-                  <div class="phone-stat-num">42</div>
-                  <div class="phone-stat-label">Active</div>
-                </div>
-                <div class="phone-stat">
-                  <div class="phone-stat-icon yellow-bg"><ion-icon name="scale"></ion-icon></div>
-                  <div class="phone-stat-num">65.3</div>
-                  <div class="phone-stat-label">Avg kg</div>
-                </div>
-              </div>
-              <div class="phone-nav">
-                <div class="phone-nav-item active"><ion-icon name="home"></ion-icon></div>
-                <div class="phone-nav-item"><ion-icon name="wallet"></ion-icon></div>
-                <div class="phone-nav-item"><ion-icon name="paw"></ion-icon></div>
-                <div class="phone-nav-item"><ion-icon name="construct"></ion-icon></div>
-                <div class="phone-nav-item"><ion-icon name="stats-chart"></ion-icon></div>
-                <div class="phone-nav-item"><ion-icon name="settings"></ion-icon></div>
-              </div>
+              <img src="images/hogledger-home.png" alt="HogLedger Home dashboard screen" class="hero-phone-screenshot">
             </div>
           </div>
 
@@ -156,7 +95,7 @@
             <ion-icon name="cloud-upload"></ion-icon>
             <div>
               <span>Backup</span>
-              <strong>JSON export</strong>
+              <strong>Farm backup file</strong>
             </div>
           </div>
         </div>
@@ -187,6 +126,10 @@
           <span>Livestock</span>
         </div>
         <div class="comparison-item">
+          <ion-icon name="camera"></ion-icon>
+          <span>Photos</span>
+        </div>
+        <div class="comparison-item">
           <ion-icon name="nutrition"></ion-icon>
           <span>Feed</span>
         </div>
@@ -213,14 +156,21 @@
             <ion-icon name="wallet"></ion-icon>
           </div>
           <h3 class="feature-title">Piggery Accounting</h3>
-          <p class="feature-desc">Record income and expenses, connect costs to pigs or cages, and review profit with current currency settings.</p>
+          <p class="feature-desc">Record income and expenses, attach receipt photos, connect costs to pigs or cages, and review profit with current currency settings.</p>
         </div>
         <div class="feature-card fade-in">
           <div class="feature-icon" style="background: #eff6ff; color: #3b82f6;">
             <ion-icon name="paw"></ion-icon>
           </div>
           <h3 class="feature-title">Livestock &amp; Cage Records</h3>
-          <p class="feature-desc">Manage tagged pigs, cage or pen assignments, weights, photos, mortality records, sales, and purchase history.</p>
+          <p class="feature-desc">Manage tagged pigs, cage assignments, photos, weight history, sale readiness, mortality records, sales, and purchase history.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon" style="background: #f0fdf4; color: #059669;">
+            <ion-icon name="camera"></ion-icon>
+          </div>
+          <h3 class="feature-title">Photo Attachments</h3>
+          <p class="feature-desc">Attach camera or gallery photos to pigs, transactions, medicine, and vitamin records for clearer proof and history.</p>
         </div>
         <div class="feature-card fade-in">
           <div class="feature-icon" style="background: #fef3c7; color: #f59e0b;">
@@ -234,7 +184,7 @@
             <ion-icon name="medical"></ion-icon>
           </div>
           <h3 class="feature-title">Health Schedules</h3>
-          <p class="feature-desc">Log medicines and vitamins, manage multi-dose treatment schedules, and monitor withdrawal periods before sale.</p>
+          <p class="feature-desc">Log medicines and vitamins with photos, manage treatment schedules, track stock, and monitor withdrawal periods before sale.</p>
         </div>
         <div class="feature-card fade-in">
           <div class="feature-icon" style="background: #f3e8ff; color: #8b5cf6;">
@@ -244,11 +194,48 @@
           <p class="feature-desc">Use the Today tab for priorities across feed, low stock, treatment reminders, disinfection, and backup checks.</p>
         </div>
         <div class="feature-card fade-in">
+          <div class="feature-icon" style="background: #eef2ff; color: #6366f1;">
+            <ion-icon name="notifications"></ion-icon>
+          </div>
+          <h3 class="feature-title">Smart Reminders</h3>
+          <p class="feature-desc">Manage notification preferences for treatments, vitamins, withdrawal periods, disinfection, low stock, and backup reminders.</p>
+        </div>
+        <div class="feature-card fade-in">
           <div class="feature-icon" style="background: #fef2f2; color: #ef4444;">
             <ion-icon name="cloud-upload"></ion-icon>
           </div>
           <h3 class="feature-title">Reports &amp; Backups</h3>
-          <p class="feature-desc">Review financial reports, cage performance, expense breakdowns, and export or import full JSON backups.</p>
+          <p class="feature-desc">Review action plans, cage profit, feed usage, health cost, mortality, CSV/PDF exports, and full farm backup files.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best For Section -->
+  <section class="best-for" id="best-for">
+    <div class="container">
+      <div class="best-for-panel fade-in">
+        <div class="best-for-copy">
+          <span class="section-badge">Best For</span>
+          <h2 class="section-title">Made for Farms That Need Simple, Reliable Records</h2>
+        </div>
+        <div class="best-for-grid" aria-label="HogLedger is best for">
+          <div class="best-for-item">
+            <div class="best-for-icon"><ion-icon name="business-outline"></ion-icon></div>
+            <span>Small to medium pig farms</span>
+          </div>
+          <div class="best-for-item">
+            <div class="best-for-icon"><ion-icon name="home-outline"></ion-icon></div>
+            <span>Backyard piggeries</span>
+          </div>
+          <div class="best-for-item">
+            <div class="best-for-icon"><ion-icon name="people-outline"></ion-icon></div>
+            <span>Farm managers</span>
+          </div>
+          <div class="best-for-item">
+            <div class="best-for-icon"><ion-icon name="receipt-outline"></ion-icon></div>
+            <span>Owners tracking expenses manually</span>
+          </div>
         </div>
       </div>
     </div>
@@ -262,8 +249,8 @@
           <span class="section-badge">Offline-First by Design</span>
           <h2 class="section-title">Your Farm Data Stays on Your Device</h2>
           <p class="privacy-data-text">
-            HogLedger stores farm records locally with SQLite, so daily accounting, livestock, feed,
-            medicine, breeding, and disinfection records remain available without internet.
+            HogLedger stores farm records locally with SQLite, so accounting, livestock, photos,
+            feed, medicine, breeding, and disinfection records remain available without internet.
           </p>
         </div>
         <div class="privacy-points">
@@ -285,7 +272,7 @@
             <div class="privacy-point-icon"><ion-icon name="cloud-upload"></ion-icon></div>
             <div>
               <h3>Backup Control</h3>
-              <p>Export and import JSON backups when you want a portable copy.</p>
+              <p>Export and restore farm backup files when you want a portable copy.</p>
             </div>
           </div>
         </div>
@@ -339,16 +326,23 @@
 
         <figure class="screenshot-item screenshot-real">
           <div class="screenshot-frame">
-            <img src="images/hogledger-reports.png" alt="HogLedger Reports action plan screen" class="screenshot-img">
+            <img src="images/hogledger-health-medicine.png" alt="HogLedger vitamin schedules and health alerts screen" class="screenshot-img">
           </div>
-          <figcaption class="screenshot-caption">Reports Action Plan</figcaption>
+          <figcaption class="screenshot-caption">Health &amp; Medicine</figcaption>
         </figure>
 
         <figure class="screenshot-item screenshot-real">
           <div class="screenshot-frame">
-            <img src="images/hogledger-settings.png" alt="HogLedger Settings farm profile screen" class="screenshot-img">
+            <img src="images/hogledger-reports.png" alt="HogLedger report presets and action plan screen" class="screenshot-img">
           </div>
-          <figcaption class="screenshot-caption">Farm Settings</figcaption>
+          <figcaption class="screenshot-caption">Reports &amp; Presets</figcaption>
+        </figure>
+
+        <figure class="screenshot-item screenshot-real">
+          <div class="screenshot-frame">
+            <img src="images/hogledger-settings.png" alt="HogLedger settings currency and operation rules screen" class="screenshot-img">
+          </div>
+          <figcaption class="screenshot-caption">Settings &amp; Rules</figcaption>
         </figure>
       </div>
     </div>
@@ -384,7 +378,7 @@
               <div class="benefit-icon"><ion-icon name="shield-checkmark"></ion-icon></div>
               <div>
                 <h4>Complete Solution</h4>
-                <p>From accounting to breeding, health, feed, disinfection, and reports in one app.</p>
+                <p>From accounting to photos, breeding, health, feed, disinfection, mortality, and reports in one app.</p>
               </div>
             </div>
             <div class="benefit-item">
@@ -407,8 +401,8 @@
               <div class="about-stat-label">Offline Capable</div>
             </div>
             <div class="about-stat">
-              <div class="about-stat-number">JSON</div>
-              <div class="about-stat-label">Backup Export</div>
+              <div class="about-stat-number">Full</div>
+              <div class="about-stat-label">Farm Backup</div>
             </div>
           </div>
         </div>
@@ -475,6 +469,7 @@
         <div class="footer-links">
           <h4>Contact</h4>
           <ul>
+            <li><a href="support.html">Support</a></li>
             <li><a href="mailto:support@hogledger.app">support@hogledger.app</a></li>
           </ul>
         </div>
