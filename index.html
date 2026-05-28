@@ -4,11 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HogLedger - Piggery Accounting &amp; Farm Operations App</title>
-  <meta name="description" content="HogLedger is an offline-first piggery accounting and farm operations app for tracking finance, livestock, cages, photos, feed, medicine, breeding, disinfection, reports, and farm backup files.">
+  <meta name="description" content="HogLedger is an offline-first piggery accounting and farm operations app for tracking finance, livestock, cages, photos, feed, health calendar tasks, breeding, disinfection, reports, and farm backup files.">
   <meta name="keywords" content="HogLedger, piggery accounting, pig farm management, livestock records, farm operations, pig farming app, agriculture app, farm backup, pig photos">
   <meta property="og:title" content="HogLedger - Piggery Accounting &amp; Farm Operations">
-  <meta property="og:description" content="Offline-first piggery accounting and operations app. Track finance, livestock, photos, feed, medicine, breeding, disinfection, reports, and farm backup files.">
+  <meta property="og:description" content="Offline-first piggery accounting and operations app. Track finance, livestock, photos, feed, health calendar tasks, breeding, disinfection, reports, and farm backup files.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hogledger-feature-graphic.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="images/hogledger-feature-graphic.png">
+  <link rel="apple-touch-icon" href="images/hogledger-icon.png">
   <link rel="icon" href="images/hogledger-favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +54,7 @@
         <p class="hero-tagline">Piggery Accounting &amp; Operations</p>
         <p class="hero-description">
           The offline-first mobile app for pig farmers who need clean accounting and daily farm records.
-          Track income, expenses, cages, photos, feed, health schedules, breeding, disinfection, backup files, and reports from your phone.
+          Track income, expenses, cages, photos, feed stock and usage, health calendar tasks, breeding, disinfection, backup files, and reports from your phone.
         </p>
         <p class="hero-trust-line">
           <ion-icon name="shield-checkmark-outline"></ion-icon>
@@ -156,7 +160,7 @@
             <ion-icon name="wallet"></ion-icon>
           </div>
           <h3 class="feature-title">Piggery Accounting</h3>
-          <p class="feature-desc">Record income and expenses, attach receipt photos, connect costs to pigs or cages, and review profit with current currency settings.</p>
+          <p class="feature-desc">Record income and expenses, attach receipt photos, link new records to active pigs or cages, and keep stock purchases farm-wide until usage is logged.</p>
         </div>
         <div class="feature-card fade-in">
           <div class="feature-icon" style="background: #eff6ff; color: #3b82f6;">
@@ -177,21 +181,21 @@
             <ion-icon name="nutrition"></ion-icon>
           </div>
           <h3 class="feature-title">Feed &amp; Stock Control</h3>
-          <p class="feature-desc">Track feed inventory, supplier purchases, consumption, expiry dates, low-stock alerts, and automatic expense entries.</p>
+          <p class="feature-desc">Track feed inventory, supplier purchases, consumption, expiry dates, and low-stock alerts. Feed purchases stay farm-wide, while consumption allocates cost to cages.</p>
         </div>
         <div class="feature-card fade-in">
           <div class="feature-icon" style="background: #fce7f3; color: #ec4899;">
             <ion-icon name="medical"></ion-icon>
           </div>
-          <h3 class="feature-title">Health Schedules</h3>
-          <p class="feature-desc">Log medicines and vitamins with photos, manage treatment schedules, track stock, and monitor withdrawal periods before sale.</p>
+          <h3 class="feature-title">Health Calendar</h3>
+          <p class="feature-desc">Log medicines and vitamins with photos, manage due doses from one shared log form, track stock usage, and monitor withdrawal safe dates.</p>
         </div>
         <div class="feature-card fade-in">
           <div class="feature-icon" style="background: #f3e8ff; color: #8b5cf6;">
             <ion-icon name="today"></ion-icon>
           </div>
           <h3 class="feature-title">Daily Operations</h3>
-          <p class="feature-desc">Use the Today tab for priorities across feed, low stock, treatment reminders, disinfection, and backup checks.</p>
+          <p class="feature-desc">Use the Today tab for priorities across feed, low stock, health calendar reminders, disinfection, and backup checks.</p>
         </div>
         <div class="feature-card fade-in">
           <div class="feature-icon" style="background: #eef2ff; color: #6366f1;">
@@ -205,7 +209,7 @@
             <ion-icon name="cloud-upload"></ion-icon>
           </div>
           <h3 class="feature-title">Reports &amp; Backups</h3>
-          <p class="feature-desc">Review action plans, cage profit, feed usage, health cost, mortality, CSV/PDF exports, and full farm backup files.</p>
+          <p class="feature-desc">Review action plans, cage profit, feed usage, medicine and vitamin costs, disinfection, mortality, CSV/PDF exports, and full farm backup files.</p>
         </div>
       </div>
     </div>
@@ -250,7 +254,7 @@
           <h2 class="section-title">Your Farm Data Stays on Your Device</h2>
           <p class="privacy-data-text">
             HogLedger stores farm records locally on your device, so accounting, livestock, photos,
-            feed, medicine, breeding, and disinfection records remain available without internet.
+            feed, health calendar, breeding, and disinfection records remain available without internet.
           </p>
         </div>
         <div class="privacy-points">
@@ -328,7 +332,7 @@
           <div class="screenshot-frame">
             <img src="images/hogledger-health-medicine.png" alt="HogLedger vitamin schedules and health alerts screen" class="screenshot-img">
           </div>
-          <figcaption class="screenshot-caption">Health &amp; Medicine</figcaption>
+          <figcaption class="screenshot-caption">Health Calendar &amp; Medicine</figcaption>
         </figure>
 
         <figure class="screenshot-item screenshot-real">
@@ -378,14 +382,14 @@
               <div class="benefit-icon"><ion-icon name="shield-checkmark"></ion-icon></div>
               <div>
                 <h4>Complete Solution</h4>
-                <p>From accounting to photos, breeding, health, feed, disinfection, mortality, and reports in one app.</p>
+                <p>From accounting to photos, breeding, health calendar tasks, feed, disinfection, mortality, and reports in one app.</p>
               </div>
             </div>
             <div class="benefit-item">
               <div class="benefit-icon"><ion-icon name="notifications"></ion-icon></div>
               <div>
                 <h4>Smart Reminders</h4>
-                <p>Get notified about treatments, vitamins, disinfection, low stock, backups, and withdrawal periods.</p>
+                <p>Get notified about health calendar tasks, vitamins, disinfection, low stock, backups, and withdrawal periods.</p>
               </div>
             </div>
           </div>
@@ -432,7 +436,7 @@
             <span class="download-big">Google Play</span>
           </div>
         </a>
-        <p class="download-version">Version 1.0.0 &middot; Available on Google Play</p>
+        <p class="download-version">Version 1.0.1 &middot; Available on Google Play</p>
       </div>
     </div>
   </section>
